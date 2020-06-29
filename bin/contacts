@@ -1,6 +1,3 @@
-require_relative "../lib/contacts.rb"
-
-puts remove_strawberry
 puts remove_strawberry(contacts = {
     "Jon Snow" => {
       name: "Jon",
