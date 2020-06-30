@@ -1,12 +1,8 @@
 def remove_strawberry(contacts)
-  # Assign Freddy Mercury's hash to a variable
-  freddy = contacts["Freddy Mercury"]
-
-  # Iterate over only Freddy Mercury's data
-  freddy.each do |attribute, value|
-    if attribute == :favorite_icecream_flavors
-      value.delete_if{ |ice_cream| ice_cream == "strawberry" }
+  contacts.each do |person, contact_details_hash|
+    if person == "Freddy Mercury"
+      contact_details_hash.each do |attribute, data|
+        binding.pry
+      end
     end
   end
-  contacts
-end
